@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'swicht';
 
 
-  consola: String;//esta es la variable que se usa para el input Swicht
+  
 
-  numero:number;
+  
 }

@@ -1,0 +1,48 @@
+<div class="container bg-dark text-white text-center mt-5">
+    <h1>Swicht</h1>
+    <div [ngSwitch]="numero">
+        <div *ngSwitchCase="1">Este no es de la suerte</div>
+        <div *ngSwitchCase="2">Mañana te mueres</div>
+        <div *ngSwitchCase="3">Mañana te casas</div>
+        <div *ngSwitchCase="4">Mañana ganas la loteria</div>
+        <div *ngSwitchCase="5">Mañana te vas de viaje</div>
+        <div *ngSwitchDefault>Dime un Numero del 1 al 5</div>
+
+
+    </div>
+
+    <input type="text" [(ngModel)]="numero">
+    <app-hijo [escuSwicht]="numero"></app-hijo>
+</div>
+
+
+<div class="container bg-primary text-white text-center">
+
+    <h1>Swicht</h1>
+    <ul [ngSwitch]="consola">
+        <li *ngSwitchCase="'Play Station'">La consola mas cara</li>
+        <li *ngSwitchCase="'Xbox'">La mejor de microsoft</li>
+        <li *ngSwitchCase="'Nintendo'">La mas popular</li>
+        <li *ngSwitchCase="'Stadia'">Lo nuevo de google</li>
+        <li *ngSwitchDefault>Dime tu consola: </li>
+
+    </ul>
+
+    <input type="text " [(ngModel)]="consola">
+    <app-hijo [escuSwicht]="consola"></app-hijo>
+</div>
+
+
+
+<div class="container bg-secondary text-white text-center">
+    <h1>Swicht</h1>
+    <ul [ngSwitch]="plataforma">
+        <li *ngSwitchCase="'netflix'">LA mejor de todas</li>
+        <li *ngSwitchCase="'amazon'">Es una de las mejores</li>
+        <li *ngSwitchCase="'hbo'">Esta subiendo de categoria</li>
+        <li *ngSwitchCase="'movistar'">Es de baja categoria</li>
+        <li *ngSwitchDefault>Dime tu plataforma digital favorita</li>
+    </ul>
+    <input type="text" [(ngModel)]="plataforma">
+    <app-hijo [escuSwicht]="plataforma"></app-hijo>
+</div>

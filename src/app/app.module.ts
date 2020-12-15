@@ -4,10 +4,14 @@ import { FormsModule} from '@angular/forms';//Este es lo que necesitamos para el
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PadreComponent } from './swichtInput/padre/padre.component';
+import { HijoComponent } from './swichtInput/hijo/hijo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,

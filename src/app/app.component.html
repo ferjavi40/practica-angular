@@ -1,35 +1,12 @@
 <!-- para poder trabajar con el ngSwicht debemos de exportar los fomularios en el App module {FormsModule} -->
 
 
-<div class="container text-center">
-    <h1>Swicht</h1>
-
-    <ul [ngSwitch]="consola">
-        <li *ngSwitchCase="'Play Station'">La consola mas cara</li>
-        <li *ngSwitchCase="'Xbox'">La mejor de microsoft</li>
-        <li *ngSwitchCase="'Nintendo'">La mas popular</li>
-        <li *ngSwitchCase="'Stadia'">Lo nuevo de google</li>
-        <li *ngSwitchDefault>Dime tu consola: </li>
-
-    </ul>
-
-    <input type="text " [(ngModel)]="consola">
-</div>
 
 
 
 
-<div class="container text-center mt-5">
-    <p>DIgita un numero del 1 al 10</p>
-    <div [ngSwitch]="numero">
-        <div *ngSwitchCase="1">Este no es de la suerte</div>
-        <div *ngSwitchCase="2">Mañana te mueres</div>
-        <div *ngSwitchCase="3">Mañana te casas</div>
-        <div *ngSwitchCase="4">Mañana ganas la loteria</div>
-        <div *ngSwitchCase="5">Mañana te vas de viaje</div>
 
 
-    </div>
 
-    <input type="text" [(ngModel)]="numero">
-</div>
+
+<app-padre></app-padre>
